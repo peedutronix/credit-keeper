@@ -14,7 +14,7 @@ app.use(express.json());
 
 // Database initialization
 const db = require('./database');
-db.init();
+db.initDb();
 
 // Routes
 app.use('/api/auth', require('./routes/auth'));
